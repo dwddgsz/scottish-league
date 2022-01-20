@@ -1,12 +1,9 @@
 import ReactDOM from 'react-dom';
-import {GlobalStyle} from './GlobalStyle';
-
-
+import {GlobalStyle} from './GlobalStyle/GlobalStyle';
 
 ReactDOM.render(
   <>
   <GlobalStyle/>
-  <div>hi</div>
   </>
   ,
   document.getElementById('root')
