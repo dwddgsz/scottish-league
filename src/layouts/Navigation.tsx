@@ -1,9 +1,29 @@
 import React from 'react';
 import styled from 'styled-components'
 
+
+const Navigation = () => {
+    return (
+        <NavigationWrapper>
+                <ul className="navigation__items-list">
+                    <li className="navigation__item">
+                        <a className="navigation__link" href="#">Home</a>
+                    </li>
+                    <li className="navigation__item">
+                        <a className="navigation__link" href="#">Matches</a>
+                    </li>
+                    <li className="navigation__item">
+                        <a className="navigation__link" href="#">Top scorrers</a>
+                    </li>
+                </ul>
+        </NavigationWrapper>
+    );
+};
+
 const NavigationWrapper = styled.nav`
     height:55px;
-    border-bottom: 2px solid var(--bgc);
+    border-bottom: 2px solid var(--border);
+    background-color: var(--white);
     .navigation {
         &__items-list {
             display:flex;
@@ -13,8 +33,8 @@ const NavigationWrapper = styled.nav`
             padding: 0 15px;
             height:100%;
             margin: 0 auto;
-            border-left: 2px solid var(--bgc);
-            border-right: 2px solid var(--bgc);
+            border-left: 2px solid var(--border);
+            border-right: 2px solid var(--border);
             @media only screen and (min-width:360px) {
                justify-content: flex-start;
             }
@@ -35,24 +55,5 @@ const NavigationWrapper = styled.nav`
         }
     }
 `
-
-const Navigation = () => {
-    return (
-        <NavigationWrapper>
-                <ul className="navigation__items-list">
-                    <li className="navigation__item">
-                        <a className="navigation__link" href="#">Home</a>
-                    </li>
-                    <li className="navigation__item">
-                        <a className="navigation__link" href="#">Matches</a>
-                    </li>
-                    <li className="navigation__item">
-                        <a className="navigation__link" href="#">Top scorrers</a>
-                    </li>
-                </ul>
-        </NavigationWrapper>
-    );
-};
-
 
 export default Navigation;
