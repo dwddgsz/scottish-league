@@ -5,9 +5,10 @@ export const GlobalStyle = createGlobalStyle`
 
 :root {
   --white: #fff;
-  --bgc: #F3F5F9;
+  --border: #F3F5F9;
   --title: #333D4A;
   --text: #A1A8B1;
+  --bgc: #fcfcfc;
 }
 
 *,
@@ -24,6 +25,7 @@ html {
 }
 body {
   height: 100%;
+  background-color: var(--bgc);
 }
 input, button, textarea, select {
   font: inherit;
