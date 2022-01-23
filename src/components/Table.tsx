@@ -36,7 +36,7 @@ const Table:React.FC = () => {
 
   const renderStandings = () => {
     return standings?.map((standing)=>{
-      return <TableElement standing={standing}/>
+      return <TableElement standing={standing} key={standing.team_name}/>
     })
   }
 
