@@ -6,15 +6,15 @@ import TableElement from './TableElement';
 const apiKey = process.env.REACT_APP_API_KEY;
 
 export interface standing {
-  team_name: string;
+  team_name: string,
   overall: {
-    games_played: number | string;
-    won: number | string;
-    draw: number | string;
-    lost: number | string;
-    goals_scored: number | string;
-    goals_against: number | string;
-    points: number | string;
+    games_played: number | string,
+    won: number | string,
+    draw: number | string,
+    lost: number | string,
+    goals_scored: number | string,
+    goals_against: number | string,
+    points: number | string,
   };
 }
 
@@ -42,7 +42,7 @@ const Table:React.FC = () => {
 
   const fetchStangings = async () => {
     if(!standings){
-      const response = await fetch(`https://soccer.sportmonks.com/api/v2.0/standings/season/18334?api_token=${apiKey}`);
+      const response = await fetch(`https://soccer.sportmonks.com/api/v2.0/standings/season/18369?api_token=${apiKey}`);
       const responseJSON = await response.json();
       setStandings(responseJSON.data[0].standings.data);
     }
