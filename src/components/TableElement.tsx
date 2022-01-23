@@ -1,25 +1,34 @@
 import styled from 'styled-components';
+import {standing} from './Table';
 
-interface Props {
+interface TableElementWrapperProps {
     header?:boolean;
 }
 
-const TableElement:React.FC<Props> = ({header}) => {
+interface TableElementProps {
+    header?:boolean;
+    standing:standing;
+}
+
+
+const TableElement:React.FC<TableElementProps> = ({header,standing}) => {
+    const {team_name} = standing;
+    const {games_played,won,draw,lost,goals_scored,goals_against,points} = standing.overall;
   return (
         <TableElementWrapper header={header}>
-            <h4 className="team-stats__name">Name</h4>
-            <span className="team-stats__played">G</span>
-            <span className="team-stats__wins">W</span>
-            <span className="team-stats__draws">D</span>
-            <span className="team-stats__losses">L</span>
-            <span className="team-stats__points">GS</span>
-            <span className="team-stats__scored">GC</span>
-            <span className="team-stats__conceded">P</span>
+            <h4 className="team-stats__name">{team_name}</h4>
+            <span className="team-stats__played">{games_played}</span>
+            <span className="team-stats__wins">{won}</span>
+            <span className="team-stats__draws">{draw}</span>
+            <span className="team-stats__losses">{lost}</span>
+            <span className="team-stats__scored">{goals_scored}</span>
+            <span className="team-stats__conceded">{goals_against}</span>
+            <span className="team-stats__points">{points}</span>
         </TableElementWrapper>
     );
 };
 
-export const TableElementWrapper = styled.li<Props>`
+export const TableElementWrapper = styled.li<TableElementWrapperProps>`
     display:flex;
     color: var(--title);
     padding: 5px 15px;
