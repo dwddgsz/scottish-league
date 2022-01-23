@@ -7,13 +7,13 @@ const Navigation = () => {
         <NavigationWrapper>
                 <ul className="navigation__items-list">
                     <li className="navigation__item">
-                        <a className="navigation__link" href="#">Home</a>
+                        <a className="navigation__link" href="/">Home</a>
                     </li>
                     <li className="navigation__item">
-                        <a className="navigation__link" href="#">Matches</a>
+                        <a className="navigation__link" href="/">Matches</a>
                     </li>
                     <li className="navigation__item">
-                        <a className="navigation__link" href="#">Top scorrers</a>
+                        <a className="navigation__link" href="/">Top scorrers</a>
                     </li>
                 </ul>
         </NavigationWrapper>
