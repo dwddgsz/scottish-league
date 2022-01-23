@@ -44,7 +44,7 @@ const LatestMatches = () => {
     const [matches, setMatches] = useState<latestMatch[] | undefined>(undefined);
     const renderMatches = () => {
         return matches?.map((match)=>{
-          return <LatestMatchElement match={match}/>
+          return <LatestMatchElement match={match} key={match.id}/>
         })
       }
     
