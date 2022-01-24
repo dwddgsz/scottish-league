@@ -36,7 +36,7 @@ const Table:React.FC = () => {
 
   const renderStandings = () => {
     return standings?.map((standing)=>{
-      return <TableElement standing={standing}/>
+      return <TableElement standing={standing} key={standing.team_name}/>
     })
   }
 
@@ -53,7 +53,7 @@ const Table:React.FC = () => {
   })
   return (
     <TableWrapper>
-      {standings ? <><TableElement header={true} standing={standingsHeader}/>{renderStandings()}</> : <div>loading</div>}
+      {standings ? <><TableElement header={true} standing={standingsHeader}/>{renderStandings()}</> : <div>loading...</div>}
     </TableWrapper>
   )
 };

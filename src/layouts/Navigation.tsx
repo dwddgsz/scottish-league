@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 
 const Navigation = () => {
@@ -7,13 +8,13 @@ const Navigation = () => {
         <NavigationWrapper>
                 <ul className="navigation__items-list">
                     <li className="navigation__item">
-                        <a className="navigation__link" href="#">Home</a>
+                        <Link className="navigation__link" to="/">Home</Link>
                     </li>
                     <li className="navigation__item">
-                        <a className="navigation__link" href="#">Matches</a>
+                        <Link className="navigation__link" to="/top-scorers">Top scorrers</Link>
                     </li>
                     <li className="navigation__item">
-                        <a className="navigation__link" href="#">Top scorrers</a>
+                        <Link className="navigation__link" to="/contact">Contact</Link>
                     </li>
                 </ul>
         </NavigationWrapper>

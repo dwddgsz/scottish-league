@@ -1,14 +1,14 @@
 import {createGlobalStyle} from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-
 :root {
   --white: #fff;
   --border: #F3F5F9;
   --title: #333D4A;
   --text: #A1A8B1;
   --bgc: #fcfcfc;
+  --error: red;
+  --success: #18bc9c;
 }
 
 *,

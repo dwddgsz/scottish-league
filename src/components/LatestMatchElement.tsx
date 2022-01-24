@@ -1,4 +1,5 @@
 import {latestMatch} from './LatestMatches';
+import { useNavigate } from 'react-router-dom';
 
 import styled from 'styled-components';
 
@@ -7,6 +8,11 @@ const LatestMatchElement:React.FC<{match:latestMatch}> = ({match}) => {
     const {date} = match.time.starting_at;
     const {ht_score,ft_score,localteam_score,visitorteam_score} = match.scores;
 
+    const navigate = useNavigate();
+
+    const navigateToDetails = () => {
+        navigate(`/match/${id}`);
+    }
 
   return (
     <LatestMatchElementWrapper>
@@ -30,7 +36,7 @@ const LatestMatchElement:React.FC<{match:latestMatch}> = ({match}) => {
         
         </div>
 
-        <button className="match__more">
+        <button className="match__more" onClick={navigateToDetails}>
             More
         </button>
     </LatestMatchElementWrapper>
@@ -43,6 +49,9 @@ const LatestMatchElementWrapper = styled.li`
     padding:13px 15px;
     border-bottom: 2px solid var(--border);
     color: var(--title);
+    @media only screen and (min-width:500px) {
+        font-size:1.25rem;
+    }
     .match {
         &__date {
             @media only screen and (min-width:600px) {
@@ -111,6 +120,11 @@ const LatestMatchElementWrapper = styled.li`
             font-size:1.3rem;
             background-color: var(--border);
             color: var(--title);
+            cursor:pointer;
+            &:hover {
+                background-color: var(--title);
+                color: var(--border);
+            }
         }
     }
 `
