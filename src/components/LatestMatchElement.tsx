@@ -11,7 +11,7 @@ const LatestMatchElement:React.FC<{match:latestMatch}> = ({match}) => {
     const navigate = useNavigate();
 
     const navigateToDetails = () => {
-        navigate(`/match-details/${id}`);
+        navigate(`/match/${id}`);
     }
 
   return (
