@@ -28,6 +28,7 @@ const Contact = () => {
             return;
         } 
         setIsSuccess(true);
+        setContactForm(contactFormInitialState);
     }
 
     const handleOnChange = (e: (React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>)) => {
