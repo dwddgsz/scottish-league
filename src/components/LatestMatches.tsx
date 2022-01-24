@@ -53,9 +53,7 @@ const LatestMatches = () => {
       const response = await fetch(
         `https://soccer.sportmonks.com/api/v2.0/fixtures/between/${weekAgo}/${today}?api_token=${apiKey}&leagues=501&include=localTeam,visitorTeam`
       );
-      console.log(response);
       const responseJSON = await response.json();
-      console.log(responseJSON);
       setMatches(responseJSON.data);
     }
   };
