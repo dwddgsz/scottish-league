@@ -5,6 +5,7 @@ Informations about Scottish Premiership: standings, latest matches, topscorers
 API has limit 180 requests/h
 
 Created with: React, Typescript
+
 React related libraries: styled-components, react-router-dom
 
 [live](https://scottish-premiership-league.netlify.app/)
