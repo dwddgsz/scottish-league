@@ -10,19 +10,19 @@ React related libraries: styled-components, react-router-dom
 <img src="docs/home-d.png" width=800 >
 
 ### home page (mobile):
-<img src="docs/home-m.png" width=800 >
+<img src="docs/home-m.png" width=400 >
 
 ### details:
 <img src="docs/details-d.png" width=800 >
 
 ### details (mobile):
-<img src="docs/details-m.png" width=800 >
+<img src="docs/details-m.png" width=400 >
 
 ### topscorers:
 <img src="docs/top-d.png" width=800 >
 
 ### topscorers (mobile):
-<img src="docs/top-m.png" width=800 >
+<img src="docs/top-m.png" width=400 >
 
 ### not found:
 <img src="docs/notfound.png" width=800 >
