@@ -53,7 +53,7 @@ const Table:React.FC = () => {
   })
   return (
     <TableWrapper>
-      {standings ? <><TableElement header={true} standing={standingsHeader}/>{renderStandings()}</> : <div>loading</div>}
+      {standings ? <><TableElement header={true} standing={standingsHeader}/>{renderStandings()}</> : <div>loading...</div>}
     </TableWrapper>
   )
 };

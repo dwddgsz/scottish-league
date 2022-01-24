@@ -98,7 +98,7 @@ const TopScorers = () => {
             <button className={topScorersMode === 'assists' ? 'active' : ''} onClick={()=>setTopScorersMode('assists')}>Assists</button>
         </div>
         <ul className="top-scorers__list">
-            { !topGoalsScorers && !topAssistsScorers ? <li>loading</li> : renderTopScorersInit()}
+            { !topGoalsScorers && !topAssistsScorers ? <li>loading...</li> : renderTopScorersInit()}
         </ul>
     </TopScorersWrapper>
   );
@@ -147,6 +147,7 @@ const TopScorersWrapper = styled.article`
                 padding: 3px 8px;
                 border:none;
                 outline:none;
+                font-size:1.2rem;
                 background-color: transparent;
                 color: var(--title);
                 cursor: pointer;

@@ -63,7 +63,7 @@ const LatestMatches = () => {
       })
   return (
     <LatestMatchesWrapper>
-        {matches ? renderMatches() : <div>loading</div>}
+        {matches ? renderMatches() : <div>loading...</div>}
     </LatestMatchesWrapper>
     );
 };

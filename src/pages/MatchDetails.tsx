@@ -124,7 +124,7 @@ const MatchDetails = () => {
   return (
     <MatchDetailsWrapper>
         { !matchDetailsItems ? (
-           <div>loading</div>
+           <div>loading...</div>
         ) : (
             <>
             <div className="match__info">
@@ -284,6 +284,7 @@ const MatchDetailsWrapper = styled.article`
                 padding: 3px 8px;
                 border:none;
                 outline:none;
+                font-size:1.2rem;
                 background-color: transparent;
                 color: var(--title);
                 cursor: pointer;
