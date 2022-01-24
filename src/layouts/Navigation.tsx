@@ -13,6 +13,9 @@ const Navigation = () => {
                     <li className="navigation__item">
                         <Link className="navigation__link" to="/top-scorers">Top scorrers</Link>
                     </li>
+                    <li className="navigation__item">
+                        <Link className="navigation__link" to="/contact">Contact</Link>
+                    </li>
                 </ul>
         </NavigationWrapper>
     );
