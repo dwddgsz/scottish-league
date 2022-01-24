@@ -18,10 +18,10 @@ React related libraries: styled-components, react-router-dom
 ### details (mobile):
 <img src="docs/details-m.png" width=800 >
 
-### details:
+### topscorers:
 <img src="docs/top-d.png" width=800 >
 
-### details (mobile):
+### topscorers (mobile):
 <img src="docs/top-m.png" width=800 >
 
 ### not found:
