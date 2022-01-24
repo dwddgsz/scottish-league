@@ -318,6 +318,11 @@ const MatchDetailsWrapper = styled.article`
             p {
                 font-size:1.1rem;
             }
+            li, p {
+                @media only screen and (min-width:600px) {
+                    font-size:1.2rem;
+                }
+            }
         }
         &__home-squad,&__away-squad {
             border: 2px solid var(--border);
@@ -342,6 +347,7 @@ const MatchDetailsWrapper = styled.article`
             border: 2px solid var(--border);
             @media only screen and (min-width:600px) {
                 width: calc(50% - 7.5px);
+                font-size:1.15rem;
             }
             &.active {
                 display:flex;

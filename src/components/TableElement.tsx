@@ -38,6 +38,9 @@ export const TableElementWrapper = styled.li<TableElementWrapperProps>`
     span {
         text-align:center;
         font-weight: ${(props) => props.header ? '500':''};
+        @media only screen and (min-width:500px) {
+                font-size:1.4rem;
+            }
     }
     border-bottom: ${(props) => props.header ? '2px solid var(--border)' :'none'};  
     .team-stats {
@@ -48,6 +51,7 @@ export const TableElementWrapper = styled.li<TableElementWrapperProps>`
             font-weight: ${(props) => props.header ? '500':''};
             @media only screen and (min-width:500px) {
                 width:30%;
+                font-size:1.4rem;
             }
         }
         &__played,&__wins,&__draws,&__losses,&__points {

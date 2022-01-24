@@ -49,6 +49,9 @@ const LatestMatchElementWrapper = styled.li`
     padding:13px 15px;
     border-bottom: 2px solid var(--border);
     color: var(--title);
+    @media only screen and (min-width:500px) {
+        font-size:1.25rem;
+    }
     .match {
         &__date {
             @media only screen and (min-width:600px) {
