@@ -55,7 +55,7 @@ const TopScorers = () => {
     const renderTopGoalsScorers = () => {
       return topGoalsScorers?.data.map(scorer=>{
         return (
-          <li className="top-scorers__item">
+          <li className="top-scorers__item" key={scorer.player.data.fullname}>
             <span>{scorer.position}</span>
             <img className="top-scorers__photo" src={scorer.player.data.image_path} alt="player"/>
             <span className="top-scorers__name">{scorer.player.data.fullname}</span>
@@ -68,7 +68,7 @@ const TopScorers = () => {
     const renderTopAssistsScorers = () => {
       return topAssistsScorers?.data.map(scorer=>{
         return (
-          <li className="top-scorers__item">
+          <li className="top-scorers__item" key={scorer.player.data.fullname}>
             <span>{scorer.position}</span>
             <img className="top-scorers__photo" src={scorer.player.data.image_path} alt="player"/>
             <span className="top-scorers__name">{scorer.player.data.fullname}</span>

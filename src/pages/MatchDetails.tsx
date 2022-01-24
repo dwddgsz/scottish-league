@@ -78,7 +78,7 @@ const MatchDetails = () => {
                     return player.team_id === teamId
                 })
                 .map(player=>{
-                    return <li>{player.player_name}</li>
+                    return <li key={player.player_name}>{player.player_name}</li>
                 })
             }
         }
@@ -87,7 +87,7 @@ const MatchDetails = () => {
             return events.map(event=>{
                 if (event.type === 'substitution'){
                     return (
-                        <li>
+                        <li key={event.player_name}>
                         <span>{event.minute}` </span>
                         <span className="match__key-event">{event.type} </span>
                         <span>{event.player_name} for {event.related_player_name}</span>
