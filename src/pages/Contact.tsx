@@ -76,6 +76,7 @@ const ContactWrapper = styled.article`
     border-left: 2px solid var(--border);
     border-right: 2px solid var(--border);
     background-color: var(--white);
+    color: var(--title);
     .feedback-form {
         width:100%;
         border: 2px solid var(--border);
