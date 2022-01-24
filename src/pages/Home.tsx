@@ -44,8 +44,10 @@ const HomeWrapper = styled.article`
         }
       }
       &--latest-matches {
+        margin-top: 25px;
         @media only screen and (min-width:1200px) {
-          margin-left:7.5px
+          margin-left:7.5px;
+          margin-top: 0;
         }
       }
     }
