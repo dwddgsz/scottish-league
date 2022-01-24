@@ -29,5 +29,11 @@ React related libraries: styled-components, react-router-dom
 ### topscorers (mobile):
 <img src="docs/top-m.png" width=400 >
 
+### contact:
+<img src="docs/contact-d.png" width=800 >
+
+### contact (mobile):
+<img src="docs/contact-m.png" width=400 >
+
 ### not found:
 <img src="docs/notfound.png" width=800 >
