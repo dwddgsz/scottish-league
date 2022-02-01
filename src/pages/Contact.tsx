@@ -56,7 +56,7 @@ const Contact = () => {
                 <p className={contactFormErrors.email ? "feedback-form__error show-error" : "feedback-form__error"}>Cannot be empty</p>
             </div>
             <div className="feedback-form__group">
-                <label className="feedback-form__label" htmlFor="content">Email</label>
+                <label className="feedback-form__label" htmlFor="content">Message</label>
                 <textarea onChange={(e)=>{handleOnChange(e)}} className="feedback-form__field" name="content" value={contactForm.content}/>
                 <p className={contactFormErrors.content ? "feedback-form__error show-error" : "feedback-form__error"}>Cannot be empty</p>
             </div>
