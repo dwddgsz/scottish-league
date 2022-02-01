@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 const apiKey = process.env.REACT_APP_API_KEY;
 const date = new Date();
 const dateWeekAgo = new Date();
-dateWeekAgo.setDate(dateWeekAgo.getDate() - 7);
+dateWeekAgo.setDate(dateWeekAgo.getDate() - 14);
 const currentMonth =
   date.getMonth() + 1 < 10 ? `0${date.getMonth() + 1}` : date.getMonth() + 1;
 const monthWeekAgo =
