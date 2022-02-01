@@ -5,11 +5,11 @@ import { useState, useEffect } from "react";
 const apiKey = process.env.REACT_APP_API_KEY;
 const date = new Date();
 const dateWeekAgo = new Date();
-dateWeekAgo.setDate(dateWeekAgo.getDate() - 14);
+dateWeekAgo.setDate(dateWeekAgo.getDate() - 7);
 const currentMonth =
   date.getMonth() + 1 < 10 ? `0${date.getMonth() + 1}` : date.getMonth() + 1;
 const monthWeekAgo =
-  date.getMonth() + 1 < 10 ? `0${date.getMonth() + 1}` : date.getMonth() + 1;
+dateWeekAgo.getMonth() + 1 < 10 ? `0${dateWeekAgo.getMonth() + 1}` : dateWeekAgo.getMonth() + 1;
 const today = `${date.getFullYear()}-${currentMonth}-${date.getDate()}`;
 const weekAgo = `${dateWeekAgo.getFullYear()}-${monthWeekAgo}-${dateWeekAgo.getDate()}`;
 
